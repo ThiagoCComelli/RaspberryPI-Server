@@ -1,0 +1,135 @@
+.mainHome{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50px);
+    padding-top: 50px;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titleDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleDiv h1{
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+}
+
+.titleDiv img{
+    height: 50px;
+    /* width: 100px; */
+    object-fit: cover;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: scale 1s;
+}
+
+.titleDiv img:hover{
+    scale: 1.2;
+    animation: rotate infinite 10s linear;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.mainHome form{
+    width: 100%;
+    max-width: 700px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.uploadDiv{
+    width: 90%;
+    max-width: 700px;
+    height: 300px;
+    background-color: #fff;
+    border: solid 1px #1717172f;
+    padding: 10px;
+}
+
+.uploadSubDiv{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 2px #1717172f dashed;
+    transition: all .2s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-color: #1717172f #fff; 
+    scrollbar-width: thin;
+}
+
+.uploadSubDiv span{
+    margin-right: 30px;
+}
+
+.noItem{
+    align-items: center;
+}
+
+.uploadSubDiv h3{
+    font-size: 1.4rem;
+    opacity: .5;
+}
+
+.uploadSubDiv:hover{
+    scale: 1.01;
+}
+
+.uploadSubDiv input {
+    display: none;
+}
+
+.configDiv{
+    display: flex;
+    width: 90%;
+    max-width: 700px;
+    /* height: 50px; */
+    background-color: #fff;
+    border: solid 1px #1717172f;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.configDiv button{
+    background-color: #fff;
+    color: #000;
+    padding: 5px 15px;
+    border: solid 1px #1717172f;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.configDiv h3{
+    opacity: .7;
+    font-weight: 400;
+}
+
+.configDiv button:hover{
+    background-color: rgb(233, 233, 233);
+}
